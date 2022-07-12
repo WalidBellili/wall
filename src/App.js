@@ -1,13 +1,17 @@
-import React from 'react'
-import users from './users.json'
-import Card from './components/Card'
+import React from "react";
 
 class App extends React.Component {
   render() {
+    const names = ["john", "jane", "mike", "tony"];
+
     return (
-      // hello
-    )
+      <ul>
+        {names.map((name) => {
+          return <li>{name}</li>;
+        })}
+      </ul>
+    );
   }
 }
 
-export default App 
+export default App;
